@@ -11,10 +11,10 @@ interface Comment {
 }
 
 export interface Product {
-    id: number;
+    id: string;
     imageUrl: string;
     name: string;
-    count: number;
+    count: string;
     size: Size;
     weight: string;
     comments: Comment[];

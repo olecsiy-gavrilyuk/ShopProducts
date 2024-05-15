@@ -5,7 +5,7 @@ export const getProducts = () => {
     return client.get<Product[]>('/products');
 };
 
-export const getProductById = (productId: number) => {
+export const getProductById = (productId: string) => {
     return client.get<Product[]>(`/prodcuts/${productId}`);
 };
 
@@ -13,7 +13,7 @@ export const addProduct = ( product: Product) => {
     return client.post<Product>('/products', product);
 };
 
-export const deleteProductById = (productId: number) => {
+export const deleteProductById = (productId: string) => {
     return client.delete(`/products/${productId}`);
 };
 

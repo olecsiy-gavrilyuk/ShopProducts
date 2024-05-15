@@ -24,7 +24,7 @@ export const createProduct = createAsyncThunk(
 
 export const deleteProduct = createAsyncThunk(
     'deleteProduct',
-    async (productId: number) => {
+    async (productId: string) => {
         await deleteProductById(productId);
 
         return productId;
